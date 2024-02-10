@@ -69,4 +69,15 @@ likes *= 2; // multiply likes by 2
 console.log(likes);
 likes /= 2; // divide likes by 2
 console.log(likes);
+likes **= 2; // raise to the power of 2
+console.log(likes);
+likes %= 2; // remainder of 2
+console.log(likes);
+
+// NaN - not a number
+console.log(5 / 'hello');
+console.log(5 * 'hello');
+let result8 = 'the blog has ' + likes + ' likes';
+console.log(result8);
+
 
