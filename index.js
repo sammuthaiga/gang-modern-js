@@ -94,3 +94,13 @@ console.log(result9);
 // template string way
 let result10 = `The blog called ${title} by ${author} has ${likes1} likes`;
 console.log(result10);
+
+// creating html template literals
+let html = `
+    <h2>${title}</h2>
+    <p>By ${author}</p>
+    <span>This blog has ${likes1} likes</span>
+`;
+console.log(html);
+
+
