@@ -82,4 +82,15 @@ console.log(5 * 'hello');
 let result8 = 'the blog has ' + likes + ' likes';
 console.log(result8);
 
+// template strings
+const title = 'Best reads of 2024';
+const author = 'Samido';
+const likes1 = 30;
 
+// concatenation way
+let result9 = 'The blog called ' + title + ' by ' + author + ' has ' + likes1 + ' likes';
+console.log(result9);
+
+// template string way
+let result10 = `The blog called ${title} by ${author} has ${likes1} likes`;
+console.log(result10);
