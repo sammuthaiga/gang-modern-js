@@ -10,12 +10,12 @@ console.log(ninjas);
 let random = ['shaun', 'ryu', 'chun-li', 10, 20, ['one', 'two']];
 console.log(random);
 
-// // Accessing elements
-// console.log(ninjas[1]);
+// Accessing elements through index
+console.log(ninjas[1]);
 
-// // Modifying elements
-// ninjas[1] = 'ken';
-// console.log(ninjas[1]);
+// Modifying elements
+ninjas[1] = 'ken';
+console.log(ninjas[1]);
 
 
 
