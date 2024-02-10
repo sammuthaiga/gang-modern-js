@@ -51,3 +51,22 @@ console.log(result6);
 // order of operation - B I D M A S
 let result7 = 5 * (10 - 3) ** 2;
 console.log(result7);
+let likes = 10;
+// Increment by 1 ;
+likes = likes + 1; // increment likes by 1
+console.log(likes);
+
+// Short hand notation
+likes++; // increment likes by 1
+console.log(likes);
+likes--; // decrement likes by 1
+console.log(likes);
+likes += 10; // increment likes by 10
+console.log(likes);
+likes -= 5; // decrement likes by 5
+console.log(likes);
+likes *= 2; // multiply likes by 2
+console.log(likes);
+likes /= 2; // divide likes by 2
+console.log(likes);
+
