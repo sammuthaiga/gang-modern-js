@@ -47,3 +47,7 @@ let result5 = radius % 3;
 console.log(result5);
 let result6 = pi * radius ** 2;
 console.log(result6);
+
+// order of operation - B I D M A S
+let result7 = 5 * (10 - 3) ** 2;
+console.log(result7);
