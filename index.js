@@ -49,7 +49,15 @@ let result4 = ninjas.pop();
 console.log(result4);
 console.log(ninjas);
 
-// Array functions
+// Null and undefined
+// Undefined data type
+let age;
+console.log(age, age + 3, `the age is ${age}`);
+
+// Null data type
+age = null;
+console.log(age, age + 3, `the age is ${age}`);
+
 
 
 
