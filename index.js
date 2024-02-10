@@ -32,6 +32,21 @@ console.log(name > 'shaun');
 console.log(name > 'Shaun');
 console.log(name > 'Crystal');
 
+// Loose comparison (different types can still be equal)
+console.log(age == 25);
+console.log(age == '25');
+console.log(age != 25);
+console.log(age != '25');
+
+// Strict comparison (different types cannot be equal)
+console.log(age === 25);
+console.log(age === '25');
+console.log(age !== 25);
+console.log(age !== '25');
+
+// Type conversion
+
+
 
 
 
