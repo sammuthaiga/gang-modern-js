@@ -77,6 +77,8 @@ console.log(likes);
 // NaN - not a number
 console.log(5 / 'hello');
 console.log(5 * 'hello');
+
+// Concatenating strings with numbers
 let result8 = 'the blog has ' + likes + ' likes';
 console.log(result8);
 
