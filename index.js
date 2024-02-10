@@ -37,3 +37,13 @@ let result3 = email.replace('a', 'o');
 console.log(result3);
 let result4 = email.replace('g', 'i');
 console.log(result4);
+// Numbers
+let radius = 10;
+const pi = 3.14;
+console.log(radius, pi);
+// math operators +, -, *, /, **, %
+console.log(10 / 2);
+let result5 = radius % 3;
+console.log(result5);
+let result6 = pi * radius ** 2;
+console.log(result6);
