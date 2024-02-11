@@ -1,30 +1,31 @@
 // Functions
 
-// function declarations
-function greet() {
-  console.log('Hello');
+// argument and parameters
+const speak = function(name) {
+    console.log(`Good day ${name}!`);
 }
 
-// function expressions
-const speak = function() {
-  console.log('Good day!');
-};
-
-greet();
 speak();
+speak('Mario');
 
-const sendGreet = function() {
-  console.log('Hello there!');
+const speak1 = function(name, time) {
+    console.log(`Good ${time} ${name}!`);
 }
 
-// self examples
-const plumbers = function() {
-    let newPlumbers = ['Joe', 'Bob', 'Tom'];
-    for (let i = 0; i < newPlumbers.length; i++) {
-      if (newPlumbers[i].includes('Joe') || newPlumbers[i].includes('Bob') || newPlumbers[i].includes('Tom')) {
-        console.log('We have a new plumber! ' + newPlumbers[i]);
-      }
-    }
-};
+speak1('Mario', 'morning');
 
-plumbers();
+const speak2 = function(name='Samido', time='night') {
+    console.log(`Good ${time} ${name}!`);
+}
+
+speak2();
+
+// self practice.
+const alertAvailablePlumbers = function(name, time, number, message) {
+    console.log(`Good ${time} dear ${name},id number ${number} we are excited to inform you that ${message}.Sign-in for more details!`);
+}
+
+alertAvailablePlumbers('Samido', 'afternoon', 2134532, 'You have a new job waiting.')
+
+// retun values
+
