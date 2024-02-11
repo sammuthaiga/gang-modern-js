@@ -1,36 +1,22 @@
-// break and continue
-const scores = [50, 25, 0, 30, 100, 20, 10];
-for (let i = 0; i < scores.length; i++) {
-    if (scores[i] === 0) {
-        continue;
-    }
-    console.log('Your score: ', scores[i]);
-    if (scores[i] === 100) {
-        console.log('Congratulations, you got the top score!');
-        break;
-    }
+// variables & block scope
+
+// Global Scope
+let age = 30;
+if (true) {
+    console.log("Inside 1st level code block: ", age);
 }
 
-// switch statements.
-const grade = 'D';
+// Local Scope
+if (true) {
+    let age = 40;
+    let name = 'shaun';
+    console.log('inside 1st code block: ', age, name);
 
-// using the switch statements.
-switch (grade) {
-    case 'A':
-        console.log('You got an A!');
-        break;
-    case 'B':
-        console.log('You got a B!');
-        break;
-    case 'C':
-        console.log('You got a C!');
-        break;
-    case 'D':
-        console.log('You got a D!');
-        break;
-    case 'E':
-        console.log('You got an E!');
-        break;
-    default:
-        console.log('Not a valid grade');
+    if (true) {
+        let age = 50;
+        console.log('inside 2nd code block: ', age);
+    }
 }
+console.log('outside code block: ', age, name);
+
+
