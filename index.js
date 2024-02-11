@@ -1,31 +1,29 @@
-// Functions
-
-// argument and parameters
-const speak = function(name) {
-    console.log(`Good day ${name}!`);
-}
-
-speak();
-speak('Mario');
-
-const speak1 = function(name, time) {
-    console.log(`Good ${time} ${name}!`);
-}
-
-speak1('Mario', 'morning');
-
-const speak2 = function(name='Samido', time='night') {
-    console.log(`Good ${time} ${name}!`);
-}
-
-speak2();
-
-// self practice.
-const alertAvailablePlumbers = function(name, time, number, message) {
-    console.log(`Good ${time} dear ${name},id number ${number} we are excited to inform you that ${message}.Sign-in for more details!`);
-}
-
-alertAvailablePlumbers('Samido', 'afternoon', 2134532, 'You have a new job waiting.')
-
 // retun values
+const calAreas = function (radius) {
+    let area = 3.14 * radius**2;
+    console.log(area);
+}
 
+calAreas(5);
+
+const calArea1 = function (radius) {
+    return 3.14 * radius**2;
+}
+
+const area = calArea1(5);
+console.log(area);
+
+const calVol = function(area) {
+    return area * 5;
+}
+
+const volume = calVol(area);
+console.log(volume);
+
+// Self Practice working with returned values
+const payDay = function (name, time, day, rate) {
+    return `Hello ${name}, you worked ${time} hours on ${day} and earned $${time * rate}`;
+}
+
+const payList = payDay('John', 8, 'Monday', 10);
+console.log(payList);
