@@ -1,22 +1,30 @@
-// variables & block scope
+// Functions
 
-// Global Scope
-let age = 30;
-if (true) {
-    console.log("Inside 1st level code block: ", age);
+// function declarations
+function greet() {
+  console.log('Hello');
 }
 
-// Local Scope
-if (true) {
-    let age = 40;
-    let name = 'shaun';
-    console.log('inside 1st code block: ', age, name);
+// function expressions
+const speak = function() {
+  console.log('Good day!');
+};
 
-    if (true) {
-        let age = 50;
-        console.log('inside 2nd code block: ', age);
+greet();
+speak();
+
+const sendGreet = function() {
+  console.log('Hello there!');
+}
+
+// self examples
+const plumbers = function() {
+    let newPlumbers = ['Joe', 'Bob', 'Tom'];
+    for (let i = 0; i < newPlumbers.length; i++) {
+      if (newPlumbers[i].includes('Joe') || newPlumbers[i].includes('Bob') || newPlumbers[i].includes('Tom')) {
+        console.log('We have a new plumber! ' + newPlumbers[i]);
+      }
     }
-}
-console.log('outside code block: ', age, name);
+};
 
-
+plumbers();
