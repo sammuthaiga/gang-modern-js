@@ -1,29 +1,28 @@
-// retun values
-const calAreas = function (radius) {
-    let area = 3.14 * radius**2;
-    console.log(area);
-}
-
-calAreas(5);
-
-const calArea1 = function (radius) {
+// Arrow functions
+const calArea = (radius) => {
     return 3.14 * radius**2;
-}
+};
 
-const area = calArea1(5);
-console.log(area);
+const area = calArea(5);
+console.log('Area is:', area);
 
-const calVol = function(area) {
-    return area * 5;
-}
+// Arrow functions with one parameter
+const greet = name => 'Hello ' + name;
+console.log(greet('Mario'));
 
-const volume = calVol(area);
-console.log(volume);
+// Arrow functions with multiple parameters
+const bill = (products, tax) => {
+    let total = 0;
+    for (let i = 0; i < products.length; i++) {
+        total += products[i] + products[i] * tax;
+    }
+    return total;
+};
+console.log(bill([10, 15, 30], 0.2));
 
-// Self Practice working with returned values
-const payDay = function (name, time, day, rate) {
-    return `Hello ${name}, you worked ${time} hours on ${day} and earned $${time * rate}`;
-}
+// Arrow functions with no parameters
+const name = 'Shaun';
+const greet1 = () => 'Hello ' + name;
+console.log(greet1());
 
-const payList = payDay('John', 8, 'Monday', 10);
-console.log(payList);
+
