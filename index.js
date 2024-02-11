@@ -45,7 +45,14 @@ if(password1.length >= 20) {
     console.log("can't find your password! It's too short");
     }
 
-
-
+// logical operators - OR || and AND &&
+const password2 = 'p@ssword';
+if(password2.length >= 12 && password2.includes('@')) {
+    console.log('that password is mighty strong');
+} else if(password2.length >= 8 || password2.includes('@') && password2.length > 5) {
+    console.log('that password is strong enough');
+} else {
+    console.log('password is not strong enough');
+}
 
 
