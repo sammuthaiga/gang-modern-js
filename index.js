@@ -49,4 +49,26 @@ let user3 =
 
 user3.logBlogs();
 
-// Math object
+// Array of objects inside an object
+const user = {
+    blogs: [{
+        title: 'why mac & cheese rules',
+        likes: 30
+    }, {
+        title: '10 things to make with marmite',
+        likes: 50
+    }],
+    logBlogs2() {
+        console.log('This user has written the following blogs:');
+        this.blogs.forEach(blog => {
+            console.log(blog.title, blog.likes);
+        });
+    }
+};
+
+console.log(user.blogs); // Access the 'blogs' property of the 'user' object
+user.logBlogs2(); // Call the 'logBlogs2' method
+console.log(user.blogs[0].title); // Access the first blog title
+
+
+
