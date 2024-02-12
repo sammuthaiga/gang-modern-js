@@ -1,24 +1,25 @@
-// primitive values
+// Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.
 
-// primitive values in JavaScript, such as numbers, strings, booleans, null, and undefined, are stored in the stack when they are part of a variable. However, when a primitive value is copied to another variable, the value itself is copied, not the reference.
 
-// 
-let scoreOne = 50;
-let scoreTwo = scoreOne;
-console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+// Querying the DOM
+// using querySelector and querySelectorAll to select elements from the DOM
+const para = document.querySelector('p');
+console.log(para);
 
-// when you copy a primitive value, you create a new independent copy of that value in a separate stack space.
-scoreOne = 100;
-console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+const para1 = document.querySelector('.error');
+console.log(para1);
 
-// reference values
-// reference values in JavaScript, such as arrays and objects, are stored in the heap when they are part of a variable. When a reference value is copied to another variable, the reference is copied, not the value itself.
-const userOne = { name: 'ryu', age: 30 };
-const userTwo = userOne;
-console.log(userOne, userTwo);
+const para2 = document.querySelector('body > h2');
+console.log(para2);
 
-// when you copy a reference value, you create a new reference to the same object in the heap.
-userOne.age = 40;
-console.log(userOne, userTwo);
+const paras = document.querySelectorAll('p');
+console.log(paras);
+console.log(paras[2]);
 
+paras.forEach(para => {
+    console.log(para);
+});
+
+const errors = document.querySelectorAll('.error');
+console.log(errors);
 
