@@ -2,24 +2,7 @@
 
 
 // Querying the DOM
-// using querySelector and querySelectorAll to select elements from the DOM
-const para = document.querySelector('p');
-console.log(para);
-
-const para1 = document.querySelector('.error');
-console.log(para1);
-
-const para2 = document.querySelector('body > h2');
-console.log(para2);
-
-const paras = document.querySelectorAll('p');
-console.log(paras);
-console.log(paras[2]);
-
-paras.forEach(para => {
-    console.log(para);
-});
-
-const errors = document.querySelectorAll('.error');
-console.log(errors);
+// get an element by ID 
+const title = document.getElementById('page-title');
+console.log(title);
 
