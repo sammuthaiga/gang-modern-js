@@ -1,10 +1,6 @@
-const paras = document.querySelectorAll('p');
-paras.forEach(para => {
-  if (para.textContent.includes('success')) {
-    para.classList.add('success');
-  } else if (para.textContent.includes('error')) {
-    para.classList.add('error');
-  } else if (para.textContent.includes('warning')) {
-    para.classList.add('warning');
-  }
-});
+
+
+// toggle a class
+const title = document.querySelector('.title');
+title.classList.toggle('test');
+
