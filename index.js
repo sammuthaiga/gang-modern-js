@@ -9,12 +9,26 @@ console.log(content.innerHTML);
 content.innerHTML = '<h2>This is a new h2</h2>';
 console.log(content.innerHTML);
 
+// The following example shows how to loop through an array and append each element to the DOM. 
+
 const people = ['mario', 'luigi', 'yoshi'];
 
 people.forEach(person => {
   content.innerHTML += `<p>${person}</p>`;
 }
 );
+
+// The following example shows how to create a new element and append it to the DOM.
+
+const newContent = document.createElement('div');
+newContent.classList.add('new');
+newContent.innerHTML = '<h2>This is a new h2</h2>';
+content.appendChild(newContent);
+
+// The following example shows how to remove an element from the DOM.
+
+const p = document.querySelector('p');
+p.remove();
 
 
 
