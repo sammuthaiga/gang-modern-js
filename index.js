@@ -1,21 +1,21 @@
+// Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.
 
-// Querying the DOM
-// get an element by ID 
-const title = document.getElementById('page-title');
-console.log(title);
+// The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree; with them you can change the document's structure, style, or content. Nodes can also have event handlers attached to them. Once an event is triggered, the event handlers get executed.
 
-// get elements by class name
-const errors = document.getElementsByClassName('error');
-console.log(errors);
-console.log(errors[0]);
+// The following example shows how to create update and delete elements from the DOM.
 
-// get elements by their tag name
-const paras = document.getElementsByTagName('p');
-console.log(paras);
-console.log(paras[1]);
+const content = document.querySelector('.content');
+console.log(content.innerHTML);
+content.innerHTML = '<h2>This is a new h2</h2>';
+console.log(content.innerHTML);
 
-const para = document.querySelector('p');
-console.log(para.innerText);
-para.innerText = 'Ninjas are awesome!';
+const people = ['mario', 'luigi', 'yoshi'];
+
+people.forEach(person => {
+  content.innerHTML += `<p>${person}</p>`;
+}
+);
+
+
 
 
