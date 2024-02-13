@@ -8,3 +8,8 @@
     color: limegreen;
     border: 1px dotted limegreen;
 }
+.warning {
+    padding: 10px;
+    color: yellow;
+    border: 1px dotted yellow;
+}
