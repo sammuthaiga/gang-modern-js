@@ -1,14 +1,6 @@
-// get a reference to the ul
-const ul = document.querySelector('.people');
 
-const people = ['mario', 'luigi', 'yoshi'];
 
-let html = ``;
+// toggle a class
+const title = document.querySelector('.title');
+title.classList.toggle('test');
 
-people.forEach(person => {
-  // create html template
-  html += `<li style="color: purple">${person}</li>`;
-});
-
-console.log(html);
-ul.innerHTML = html;
